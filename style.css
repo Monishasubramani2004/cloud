@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container, .quiz-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter your name" required />
+    <button onclick="login()">Start Quiz</button>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById('username').value;
+      if (username.trim() === "") {
+        alert("Please enter your name.");
+        return;
+      }
+      localStorage.setItem("username", username);
+      window.location.href = "quiz.html";
+    }
+  </script>
+</body>
+</html>
